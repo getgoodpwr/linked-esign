@@ -50,7 +50,7 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px 8px
 <div id="root"></div><div id="toast"></div>
 <script>
 // Apps Script web app that acts as the backend API (Deploy > Manage deployments > Web app URL)
-const API_URL='https://script.google.com/macros/s/AKfycbzCAdKfF0CZkgzOPibCX6wDpS7lbmGfgyGWjsa8dNpz32_jT-22JvI42_QbphyACyWu2g/exec';
+const API_URL='https://script.google.com/macros/s/AKfycbyXqlS_wq5qBvuFNDFfss94eQ8kh1qCAXAsOaVq2lCEgBGR2cDH69cS6f6D88oSe_s9/exec';
 const BOOT={token:(new URLSearchParams(location.search).get('token')||'').replace(/[^A-Za-z0-9]/g,'')};
 const $=s=>document.querySelector(s),esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ST={DRAFT:'Draft',SENT:'Sent',VIEWED:'Viewed',PARTIALLY_SIGNED:'Partially signed',COMPLETED:'Completed',VOIDED:'Voided',DECLINED:'Declined',EXPIRED:'Expired'};
